@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<script type="text/javascript" src="paper.js"></script>
-<script type="text/javascript" src="index.js"></script>
-<link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="paper.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="https://cdn.agora.io/sdk/web/AgoraRTCSDK-3.1.2.js"></script>
 </head>
+
 <body>
-    <canvas id="myCanvas" resize></canvas>
+    <div class="my-app">
+        <canvas id="myCanvas" resize>
+        </canvas>
+        <div class="my-chat">
+            <div class="name-zone">
+                <input class="name-input" placeholder="Tell us your name" type="text" />
+                <button class="name-input-button">Send</button>
+            </div>
+            <div class="message-zone">
+            </div>
+            <div class="send-zone">
+                <input class="send-input" placeholder="Type the message" type="text" />
+                <button class="send-input-button">Send</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

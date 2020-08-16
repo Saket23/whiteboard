@@ -10,7 +10,48 @@ body {
     height: 100%;
 }
 
-canvas {
+.my-app {
     height: 100%;
-    width: 100%;
+    display: flex;
+}
+
+canvas {
+    height: 100%;	
+    flex: auto;
+}
+
+.my-chat {
+    flex-basis: 240px;
+    border: 1px solid blue;
+    height: 400px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.name-zone {
+    display: flex;
+}
+
+.message-zone {
+    flex: auto;
+}
+
+.send-zone {
+    display: flex;
+}
+
+.message-box {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: darksalmon;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.message-name {
+    font-size: 20px;
+    font-weight: 600;
 }
